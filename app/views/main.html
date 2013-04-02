@@ -1,0 +1,5 @@
+<div class="hero-unit">
+  <textarea ng-show="editing" ng-model="text"></textarea>
+  <div ng-show="!editing" ng-bind-html-unsafe="rendered"></div>
+  <button ng-click="toggleEditing()">Edit</button>
+</div>

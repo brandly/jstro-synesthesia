@@ -1,5 +1,8 @@
 <div class="hero-unit">
-  <textarea ng-show="editing" ng-model="text"></textarea>
+  <textarea ng-show="editing" ng-model="text" class="span10"></textarea>
   <div ng-show="!editing" ng-bind-html-unsafe="rendered"></div>
-  <button ng-click="toggleEditing()">Edit</button>
 </div>
+<div class="form-actions">
+  <button class="btn btn-primary" ng-click="toggleEditing()">Toggle View</button>
+</div>
+

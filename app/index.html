@@ -21,14 +21,18 @@
       <script src="components/es5-shim/es5-shim.js"></script>
       <script src="components/json3/lib/json3.min.js"></script>
     <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">jstro</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+    <div class="container content" ng-view></div>
 
     <script src="components/angular/angular.js"></script>
-    <script src="components/angular-resource/angular-resource.js"></script>
-    <script src="components/angular-cookies/angular-cookies.js"></script>
-    <script src="components/angular-sanitize/angular-sanitize.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>

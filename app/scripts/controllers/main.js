@@ -17,8 +17,12 @@ angular.module('jstroApp')
     };
 
     $scope.renderColors = function () {
+        if (!$scope.text) {
+            $scope.rendered = 'You gotta type something!';
+            return;
+        }
         var text = $scope.text.toUpperCase();
-        var letter, line, size = '100px';
+        text = text.replace(/[^\w\d\ ]/g, '');
         text = text.replace(/\w|\d/g, function (letter) {
             return $scope.makeDiv($scope.colors[letter]);
         });

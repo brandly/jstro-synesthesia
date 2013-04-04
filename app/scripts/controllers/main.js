@@ -25,7 +25,7 @@ angular.module('jstroApp').controller('MainCtrl', function ($scope) {
     text = text.replace(/\w|\d/g, function (letter) {
       return $scope.makeDiv($scope.colors[letter]);
     });
-    text = text.replace(/(>)(\ )(<)/g, function (match, p1, p2, p3, offset, string) {
+    text = text.replace(/(>)(\ )(<)/g, function (match, p1, p2, p3) {
       return p1 + $scope.makeDiv('fff') + p3;
     });
 

@@ -1,10 +1,10 @@
 A=da105d
-B=51586f
+B=1436c9
 C=f5b500
 D=5e8500
 E=f83324
 F=cfe300
-G=fdf4eb
+G=f4b500
 H=cfe300
 I=edebdf
 J=ea2000

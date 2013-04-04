@@ -250,8 +250,7 @@ module.exports = function (grunt) {
     'clean:server',
     'coffee',
     'compass',
-    'connect:test',
-    'karma'
+    'connect:test'
   ]);
 
   grunt.registerTask('build', [
